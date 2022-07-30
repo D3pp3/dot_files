@@ -1,0 +1,55 @@
+{
+    "workbench.colorTheme": "GitHub Light Default",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.minimap.enabled": false,
+    "editor.wordWrap" : "on",
+    "editor.fontWeight": "bold",
+    "editor.fontFamily": "UbuntuMono Nerd Font Mono",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    "vim.leader": "<space>",
+    "vim.insertModeKeyBindings": [
+        {
+            "before" : ["j", "k"],
+            "after" : ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before" : ["<leader>", "w"],
+            "commands" : ["workbench.action.files.save"]
+        },
+        {
+            "before" : ["<leader>", "q"],
+            "commands" : ["workbench.action.closeActiveEditor"]
+        },
+        {
+            "before" : ["<tab>"],
+            "commands" : ["workbench.action.nextEditor"]
+        },
+        {
+            "before" : ["<leader>", "<tab>"],
+            "commands" : ["workbench.action.previousEditor"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive" : [
+        {
+            "before" : ["<leader>", "e"],
+            "commands" : ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before" : ["<leader>", "r"],
+            "commands" : ["workbench.action.focusSideBar"]
+        },
+        {
+            "before" : ["<leader>", "n"],
+            "commands" : ["explorer.newFile"]
+        }
+    ],
+    "[javascript]": {
+        "editor.maxTokenizationLineLength": 2500,
+        "javascript.preferences.quoteStyle": "double",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "explorer.confirmDragAndDrop": false,
+}

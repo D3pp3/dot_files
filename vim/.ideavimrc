@@ -1,0 +1,91 @@
+let mapleader = " "
+
+imap jk <Esc>
+" save file
+nmap <leader>w :w<CR>
+" close file
+nmap <leader>q :q<CR>
+
+noremap <Esc> <nop>
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
+
+nnoremap <C-j> :m +1<CR>
+nnoremap <C-k> :m -2<CR> inoremap <C-j> <Esc>:m +1<CR>gi
+inoremap <C-k> <Esc>:m -2<CR>gi
+
+" Actions
+
+"""""""""""""""""""edit vim config""""""""""""""""""""""""""""""
+
+nnoremap <leader>vr :source ~/.ideavimrc<CR>
+nnoremap <leader>vv :e ~/.ideavimrc<CR>
+
+""""""""""""""""""""""""""""BASICS"""""""""""""""""""""""""""
+nmap <leader><tab> :action PreviousTab<CR>
+nmap <tab> :action NextTab<CR>
+
+""""""""""""""""""""""""""""REFACTORING""""""""""""""""""""""
+noremap <leader>rf :action RenameFile<CR>
+noremap <leader>em :action ExtractMethod<CR>
+noremap <leader>ei :action ExtractInterface<CR>
+noremap <leader>re :action RenameElement<CR>
+noremap <leader>sw :action EditorSelectWord<CR>
+noremap <A-C-k> :action MoveLineUp<CR>
+noremap <A-C-j> :action MoveLineDown<CR>
+noremap <C-d> :action EditorDuplicateLines<CR>
+
+""""""""""""""""""""""""""""BOOKMARKS""""""""""""""""""""""""
+noremap <leader>0 :action ToggleBookmark0<CR>
+noremap <leader>1 :action ToggleBookmark1<CR>
+noremap <leader>2 :action ToggleBookmark2<CR>
+noremap <leader>3 :action ToggleBookmark3<CR>
+noremap <leader>4 :action ToggleBookmark4<CR>
+noremap <leader>5 :action ToggleBookmark5<CR>
+noremap <leader>6 :action ToggleBookmark6<CR>
+noremap <leader>7 :action ToggleBookmark7<CR>
+noremap <leader>8 :action ToggleBookmark8<CR>
+noremap <leader>9 :action ToggleBookmark9<CR>
+
+""""""""""""""""""""""""""""RUN""""""""""""""""""""""""""""""
+noremap <leader>dd :action Debug<CR>
+noremap <leader>rr :action Run<CR>
+noremap <leader>cc :action Coverage<CR>
+noremap <leader>cn :action RunCoverage<CR>
+noremap <leader>sp :action Stop<CR>
+
+""""""""""""""""""""""""""""DEBUG"""""""""""""""""""""""""""
+nmap <C-j> :action StepOver<CR>
+nmap <C-k> :action Resume<CR>
+nmap <C-h> :action StepOut<CR>
+nmap <C-l> :action StepInto<CR>
+nmap <A-v> :action ToggleBreakpointEnabled<CR>
+noremap <leader>hs :action Hotswap<CR>
+noremap <leader>bp :action ToggleLineBreakpoint<CR>
+noremap <leader>ee :action EvaluateExpression<CR>
+noremap <leader>mb :action XDebugger.MuteBreakpoints<CR>
+noremap <leader>daw :action Debugger.AddToWatch<CR>
+noremap <leader>rab :action Debugger.RemoveAllBreakpointsInFile<CR>
+noremap <leader>raB :action Debugger.RemoveAllBreakpoints<CR>
+noremap <leader>shw :action ShowExecutionPoint<CR>
+
+"""""""""""""""""""""""""""PROJECT""""""""""""""""""""""""""
+noremap <leader>ce :action CloseEditor<CR>
+noremap <leader>cae :action CloseAllEditors<CR>
+noremap <leader>cp :action CloseProject<CR>
+noremap <leader>op :action OpenFile<CR>
+noremap <leader>ri :action RestartIde<CR>
+
+""""""""""""""""""""""""""INFO"""""""""""""""""""""""""""""
+noremap <leader>fu :action FindUsages<CR>
+noremap <leader>tc mm`m:action GotoClass<CR>
+noremap <leader>ne mm`m:action GotoNextError<CR>
+noremap <leader>pe mm`m:action GotoPreviousError<CR>
+noremap <leader>gi mm`m:action GotoImplementation<CR>
+nmap <A-d> :action ShowUsages<CR>
+noremap <leader>; :action VcsShowNextChangeMarker<CR>
+noremap <leader>' :action VcsShowPrevChangeMarker<CR>
+
+"""""""""""""""""""""""""""UTILITIES""""""""""""""""""""""""
+noremap <leader>nc :action NewClass<CR>
+noremap <leader>np :action NewDir<CR>

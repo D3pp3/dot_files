@@ -1,0 +1,19 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key" : "alt+p",
+        "command" : "explorer.newFolder"
+    },
+    {
+        "key": "alt+f",
+        "command" : "explorer.newFile"
+    },
+    {
+        "key" : "alt+j",
+        "command" : "selectNextSuggestion"
+    },
+    {
+        "key" : "alt+k",
+        "command" : "selectPrevSuggestion"
+    }
+]
