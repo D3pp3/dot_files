@@ -1,12 +1,19 @@
 alias soz="source ~/.zshrc" 
 
 alias d3="~/.D3"
-alias pr="~/.D3/personal"
+alias my="~/.D3/personal"
+alias conf="~/.D3/config"
+
 alias jv="~/.D3/personal/java"
-alias conf="~/.D3/config-tools"
 alias eco="~/.D3/personal/proyects/ecommerce_v1"
 alias prys="~/.D3/personal/proyects"
 alias int="~/.D3/programs/IntelliJ/bin"
 
 # VIM DOTFILES
 alias vid="~/.D3/config-tools/vim"
+
+
+### GIT ###
+alias gbh=git branch | head -20
+alias gslh=git stash list | head -20
+alias gsp=git stash pop

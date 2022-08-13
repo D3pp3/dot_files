@@ -52,4 +52,5 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     "explorer.confirmDragAndDrop": false,
+    "emmet.triggerExpansionOnTab" : true
 }
