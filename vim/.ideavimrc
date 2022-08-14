@@ -1,41 +1,33 @@
 let mapleader = " "
 
 imap jk <Esc>
-" save file
+
+"""" GUARDAR ARCHIVO
 nmap <leader>w :w<CR>
-" close file
+"""" CERRAR ARCHIVO
 nmap <leader>q :q<CR>
 
-noremap <Esc> <nop>
-nmap <S-Enter> O<Esc>
-nmap <CR> o<Esc>
+"""" RECARGAR .ideavimrc
+nnoremap <leader>so :source ~/.ideavimrc<CR>
 
-nnoremap <C-j> :m +1<CR>
-nnoremap <C-k> :m -2<CR> inoremap <C-j> <Esc>:m +1<CR>gi
-inoremap <C-k> <Esc>:m -2<CR>gi
-
-" Actions
-
-"""""""""""""""""""edit vim config""""""""""""""""""""""""""""""
-
-nnoremap <leader>vr :source ~/.ideavimrc<CR>
-nnoremap <leader>vv :e ~/.ideavimrc<CR>
-
-""""""""""""""""""""""""""""BASICS"""""""""""""""""""""""""""
+"""" NAVEGAR ENTRE LOS ARCHIVO ABIERTOS
 nmap <leader><tab> :action PreviousTab<CR>
 nmap <tab> :action NextTab<CR>
 
-""""""""""""""""""""""""""""REFACTORING""""""""""""""""""""""
-noremap <leader>rf :action RenameFile<CR>
-noremap <leader>em :action ExtractMethod<CR>
-noremap <leader>ei :action ExtractInterface<CR>
+"""" REFACTORIZACION
+    """ RENOMBRAR CLASE, VARIABLE, METODO
 noremap <leader>re :action RenameElement<CR>
+    """ EXTRAER EN UN METODO CODIGO SELECCIONADO
+noremap <leader>em :action ExtractMethod<CR>
+    """ SELECCIONAR PALABRA
 noremap <leader>sw :action EditorSelectWord<CR>
+    """ MOVER LINEAS SELECCIONADAS
 noremap <A-C-k> :action MoveLineUp<CR>
 noremap <A-C-j> :action MoveLineDown<CR>
+    """ DUPLICAR LINEAS SELECCIONADAS
 noremap <C-d> :action EditorDuplicateLines<CR>
 
-""""""""""""""""""""""""""""BOOKMARKS""""""""""""""""""""""""
+""" BOOKMARKS
 noremap <leader>0 :action ToggleBookmark0<CR>
 noremap <leader>1 :action ToggleBookmark1<CR>
 noremap <leader>2 :action ToggleBookmark2<CR>
@@ -46,46 +38,62 @@ noremap <leader>6 :action ToggleBookmark6<CR>
 noremap <leader>7 :action ToggleBookmark7<CR>
 noremap <leader>8 :action ToggleBookmark8<CR>
 noremap <leader>9 :action ToggleBookmark9<CR>
+""" Por defecto Intellij tiene configurado Ctrl + <num> para ir al punto
+""" marcado.
 
-""""""""""""""""""""""""""""RUN""""""""""""""""""""""""""""""
+"""" ACCIONES DE ARRANQUE DE APP
 noremap <leader>dd :action Debug<CR>
 noremap <leader>rr :action Run<CR>
+noremap <leader>sp :action Stop<CR>
 noremap <leader>cc :action Coverage<CR>
 noremap <leader>cn :action RunCoverage<CR>
-noremap <leader>sp :action Stop<CR>
+noremap <leader>hs :action Hotswap<CR>
 
-""""""""""""""""""""""""""""DEBUG"""""""""""""""""""""""""""
+"""" ACCIONES DE DEBUG
 nmap <C-j> :action StepOver<CR>
 nmap <C-k> :action Resume<CR>
 nmap <C-h> :action StepOut<CR>
 nmap <C-l> :action StepInto<CR>
+    """ ACTIVAR/DESACTIVAR BREAKPOINT
 nmap <A-v> :action ToggleBreakpointEnabled<CR>
-noremap <leader>hs :action Hotswap<CR>
+    """ MARCAR BREAKPOINT
 noremap <leader>bp :action ToggleLineBreakpoint<CR>
+    """ EVALUAR CODIGO SELECCIONADO
 noremap <leader>ee :action EvaluateExpression<CR>
+    """ DESACTIVAR BREAKPOINTS
 noremap <leader>mb :action XDebugger.MuteBreakpoints<CR>
-noremap <leader>daw :action Debugger.AddToWatch<CR>
+    """ ELIMINAR TODOS LOS BREAKPOINTS EN EL ARCHIVO
 noremap <leader>rab :action Debugger.RemoveAllBreakpointsInFile<CR>
+    """ ELIMINAR TODOS LOS BREAKPOINTS EN EL PROYECTO
 noremap <leader>raB :action Debugger.RemoveAllBreakpoints<CR>
-noremap <leader>shw :action ShowExecutionPoint<CR>
 
-"""""""""""""""""""""""""""PROJECT""""""""""""""""""""""""""
-noremap <leader>ce :action CloseEditor<CR>
-noremap <leader>cae :action CloseAllEditors<CR>
+"""" ACCIONES IDE
+    """ CERRAR TODOS LOS ARCHIVOS ABIERTOS
+noremap <leader>[ :action CloseAllEditors<CR>
+    """ CERRAR PROYECTO
 noremap <leader>cp :action CloseProject<CR>
+    """ ABRIR UN PROYECTO
 noremap <leader>op :action OpenFile<CR>
+    """ REINICIAR IDE
 noremap <leader>ri :action RestartIde<CR>
 
-""""""""""""""""""""""""""INFO"""""""""""""""""""""""""""""
-noremap <leader>fu :action FindUsages<CR>
-noremap <leader>tc mm`m:action GotoClass<CR>
-noremap <leader>ne mm`m:action GotoNextError<CR>
-noremap <leader>pe mm`m:action GotoPreviousError<CR>
-noremap <leader>gi mm`m:action GotoImplementation<CR>
+"""" BUSCAR USOS
+    """ MUESTRA TODOS LOS USOS METODO, CLASE, VARIABLE
 nmap <A-d> :action ShowUsages<CR>
+    """ IR A LA IMPLEMENTACION CLASE, METODO, VARIABLE
+noremap <leader>gi mm`m:action GotoImplementation<CR>
+    """ CAMBIOS REALIZADOS EN EL ARCHIVO (GIT)
 noremap <leader>; :action VcsShowNextChangeMarker<CR>
 noremap <leader>' :action VcsShowPrevChangeMarker<CR>
+    """ ERRORES EN EL ARCHIVO
+noremap <leader>ne mm`m:action GotoNextError<CR>
+noremap <leader>pe mm`m:action GotoPreviousError<CR>
 
-"""""""""""""""""""""""""""UTILITIES""""""""""""""""""""""""
-noremap <leader>nc :action NewClass<CR>
-noremap <leader>np :action NewDir<CR>
+"""" SEPARAR EDITOR
+    """ SEPARAR EDITOR HORIZONTALMENTE
+noremap <A-S--> :action SplitHorizontally<CR>
+    """ SEPARAR EDITOR VERTICALMENTE
+noremap <A-S-\> :action SplitVertically<CR>
+    """ MOVERSE ENTRE DIFERENTES SEPARACIONES
+noremap <A-S-H> :action NextSplitter<CR>
+noremap <A-S-L> :action PrevSplitter<CR>
