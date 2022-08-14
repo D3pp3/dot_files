@@ -26,6 +26,8 @@ noremap <A-C-k> :action MoveLineUp<CR>
 noremap <A-C-j> :action MoveLineDown<CR>
     """ DUPLICAR LINEAS SELECCIONADAS
 noremap <C-d> :action EditorDuplicateLines<CR>
+    """ DAR FORMATO AL CODIGO
+noremap <C-S-I> :action ReformatCode<CR>    
 
 """ BOOKMARKS
 noremap <leader>0 :action ToggleBookmark0<CR>
