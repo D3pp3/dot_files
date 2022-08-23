@@ -36,21 +36,18 @@
         {
             "before" : ["<leader>", "e"],
             "commands" : ["workbench.action.toggleSidebarVisibility"]
-        },
-        {
-            "before" : ["<leader>", "r"],
-            "commands" : ["workbench.action.focusSideBar"]
-        },
-        {
-            "before" : ["<leader>", "n"],
-            "commands" : ["explorer.newFile"]
         }
     ],
+    "diffEditor.ignoreTrimWhitespace": false,
     "[javascript]": {
         "editor.maxTokenizationLineLength": 2500,
-        "javascript.preferences.quoteStyle": "double",
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "javascript.preferences.quoteStyle": "double"
     },
-    "explorer.confirmDragAndDrop": false,
-    "emmet.triggerExpansionOnTab" : true
+    "emmet.includeLanguages": {
+        "javascript" : "javascriptreact"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "javascript.updateImportsOnFileMove.enabled": "always"
 }
