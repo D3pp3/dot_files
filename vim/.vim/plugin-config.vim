@@ -1,7 +1,6 @@
 call plug#begin('~/.D3/config-tools/vim/.vim/autoload')
     Plug 'morhetz/gruvbox'
     Plug 'scrooloose/nerdtree'
-    Plug 'neoclide/coc.nvim', {'branch':'release'}
     Plug 'benmills/vimux'
     Plug 'jiangmiao/auto-pairs'
     Plug 'alvan/vim-closetag'

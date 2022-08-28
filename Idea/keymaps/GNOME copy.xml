@@ -5,6 +5,9 @@
   <action id="ActivateMavenToolWindow">
     <keyboard-shortcut first-keystroke="alt 5" />
   </action>
+  <action id="ActivateSonarLintToolWindow">
+    <keyboard-shortcut first-keystroke="alt minus" />
+  </action>
   <action id="ActivateVersionControlToolWindow" />
   <action id="CloseAllEditors">
     <keyboard-shortcut first-keystroke="alt close_bracket" />

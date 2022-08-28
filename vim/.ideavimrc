@@ -56,6 +56,7 @@ nmap <C-j> :action StepOver<CR>
 nmap <C-k> :action Resume<CR>
 nmap <C-h> :action StepOut<CR>
 nmap <C-l> :action StepInto<CR>
+nmap <C-p> :action ShowExecutionPoint<CR>
     """ ACTIVAR/DESACTIVAR BREAKPOINT
 nmap <A-v> :action ToggleBreakpointEnabled<CR>
     """ MARCAR BREAKPOINT
