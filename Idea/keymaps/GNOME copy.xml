@@ -5,10 +5,14 @@
   <action id="ActivateMavenToolWindow">
     <keyboard-shortcut first-keystroke="alt 5" />
   </action>
+  <action id="ActivatePlantUMLToolWindow">
+    <keyboard-shortcut first-keystroke="alt equals" />
+  </action>
   <action id="ActivateSonarLintToolWindow">
     <keyboard-shortcut first-keystroke="alt minus" />
   </action>
   <action id="ActivateVersionControlToolWindow" />
+  <action id="Android.Designer.AutoArrange" />
   <action id="CloseAllEditors">
     <keyboard-shortcut first-keystroke="alt close_bracket" />
   </action>
@@ -39,6 +43,9 @@
   </action>
   <action id="EmmetPreviousEditPoint" />
   <action id="ExportToTextFile" />
+  <action id="FindNext">
+    <keyboard-shortcut first-keystroke="f3" />
+  </action>
   <action id="GotoDeclaration">
     <mouse-shortcut keystroke="control button1" />
   </action>
@@ -48,6 +55,9 @@
   <action id="GotoLine">
     <keyboard-shortcut first-keystroke="ctrl g" />
     <keyboard-shortcut first-keystroke="alt g" />
+  </action>
+  <action id="Hotswap">
+    <keyboard-shortcut first-keystroke="shift alt h" />
   </action>
   <action id="NewClass">
     <keyboard-shortcut first-keystroke="alt f" />
@@ -61,6 +71,9 @@
   <action id="OpenFile">
     <keyboard-shortcut first-keystroke="alt o" />
   </action>
+  <action id="ReformatCode">
+    <keyboard-shortcut first-keystroke="ctrl l" />
+  </action>
   <action id="ReplaceInPath" />
   <action id="RestartIde">
     <keyboard-shortcut first-keystroke="shift ctrl r" />
@@ -69,6 +82,7 @@
     <keyboard-shortcut first-keystroke="alt s" />
   </action>
   <action id="SelectNextOccurrence" />
+  <action id="Terminal.ClearBuffer" />
   <action id="ToggleLineBreakpoint">
     <keyboard-shortcut first-keystroke="ctrl f8" />
     <keyboard-shortcut first-keystroke="alt b" />
@@ -76,6 +90,7 @@
   <action id="ToggleZenMode">
     <keyboard-shortcut first-keystroke="alt w" />
   </action>
+  <action id="Vcs.Log.FocusTextFilter" />
   <action id="XDebugger.MuteBreakpoints">
     <keyboard-shortcut first-keystroke="ctrl alt b" />
   </action>
