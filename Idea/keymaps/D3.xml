@@ -1,4 +1,4 @@
-<keymap version="1" name="GNOME copy" parent="Default for GNOME">
+<keymap version="1" name="D3" parent="Default for GNOME">
   <action id="ActivateDebugToolWindow">
     <keyboard-shortcut first-keystroke="alt 9" />
   </action>

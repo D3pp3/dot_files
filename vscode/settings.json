@@ -30,6 +30,10 @@
         {
             "before" : ["<leader>", "<tab>"],
             "commands" : ["workbench.action.previousEditor"]
+        },
+        {
+            "before" : ["<leader>", "["],
+            "commands" : ["workbench.action.closeAllGroups"]
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive" : [
@@ -53,6 +57,9 @@
     "emmet.includeLanguages": {
         "javascript" : "javascriptreact"
     },
+    "explorer.confirmDelete": false,
+    "window.zoomLevel": -1,
+    "diffEditor.ignoreTrimWhitespace": false,
     //"emmet.triggerExpansionOnTab": true,
     //"javascript.updateImportsOnFileMove.enabled": "always",
 }

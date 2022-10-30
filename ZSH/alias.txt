@@ -6,7 +6,7 @@ alias conf="~/.D3/personal/config"
 
 alias jv="~/.D3/personal/java"
 alias prys="~/.D3/personal/proyects"
-alias int="~/.D3/programs/intellij/bin/idea.sh"
+alias int="~/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/222.4345.14/bin/idea.sh"
 
 # VIM DOTFILES
 alias vid="~/.D3/config-tools/vim"
