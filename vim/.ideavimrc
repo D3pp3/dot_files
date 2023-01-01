@@ -28,7 +28,12 @@ noremap <A-C-j> :action MoveLineDown<CR>
 noremap <C-d> :action EditorDuplicateLines<CR>
     """ DAR FORMATO AL CODIGO
 noremap <C-S-I> :action ReformatCode<CR>    
-
+    """ Insertar Getter y Setter
+noremap <A-S-T> :action GenerateGetterAndSetter<CR>
+    """ Intertar Getter
+noremap <A-S-G> :action GenerateGetter<CR>
+    """ Sobreescribir metodos
+noremap <A-S-O> :action OverrideMethods<CR>
 """ BOOKMARKS
 noremap <leader>0 :action ToggleBookmark0<CR>
 noremap <leader>1 :action ToggleBookmark1<CR>
@@ -57,6 +62,7 @@ nmap <C-k> :action Resume<CR>
 nmap <C-h> :action StepOut<CR>
 nmap <C-l> :action StepInto<CR>
 nmap <C-p> :action ShowExecutionPoint<CR>
+nmap <C-e> :action EvaluateExpression<CR>
     """ ACTIVAR/DESACTIVAR BREAKPOINT
 nmap <A-v> :action ToggleBreakpointEnabled<CR>
     """ MARCAR BREAKPOINT
