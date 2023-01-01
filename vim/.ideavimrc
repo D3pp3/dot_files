@@ -85,6 +85,8 @@ noremap <leader>cp :action CloseProject<CR>
 noremap <leader>op :action OpenFile<CR>
     """ REINICIAR IDE
 noremap <leader>ri :action RestartIde<CR>
+    """ Abrir terminal
+noremap <leader>at :action ActivateTerminalToolWindow<CR>
 
 """" BUSCAR USOS
     """ MUESTRA TODOS LOS USOS METODO, CLASE, VARIABLE

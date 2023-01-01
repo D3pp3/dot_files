@@ -14,6 +14,9 @@
   <action id="ActivateTODOToolWindow">
     <keyboard-shortcut first-keystroke="alt t" />
   </action>
+  <action id="ActivateTerminalToolWindow">
+    <keyboard-shortcut first-keystroke="shift t" />
+  </action>
   <action id="ActivateVersionControlToolWindow" />
   <action id="Android.Designer.AutoArrange" />
   <action id="ChangesView.ToggleCommitUi" />
@@ -99,6 +102,7 @@
   <action id="TypeHierarchy" />
   <action id="TypeHierarchyBase.BaseOnThisType" />
   <action id="Vcs.Log.FocusTextFilter" />
+  <action id="Vcs.UpdateProject" />
   <action id="XDebugger.MuteBreakpoints">
     <keyboard-shortcut first-keystroke="ctrl alt b" />
   </action>
