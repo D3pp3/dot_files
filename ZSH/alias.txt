@@ -1,8 +1,8 @@
 alias soz="source ~/.zshrc" 
 
-alias d3="~/.D3"
+alias d3=~/.D3/personal/java/d3-SRL
 alias my="~/.D3/personal"
-alias conf="~/.D3/personal/config"
+alias conf=~/.D3/personal/config/dot_files
 
 alias jv="~/.D3/personal/java"
 alias prys="~/.D3/personal/proyects"

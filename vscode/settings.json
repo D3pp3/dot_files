@@ -59,6 +59,7 @@
     },
     "explorer.confirmDelete": false,
     "window.zoomLevel": -1,
+    "diffEditor.ignoreTrimWhitespace": false,
     //"emmet.triggerExpansionOnTab": true,
     //"javascript.updateImportsOnFileMove.enabled": "always",
 }

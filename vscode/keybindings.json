@@ -64,5 +64,13 @@
         "key": "f11",
         "command": "-workbench.action.toggleFullScreen",
         "when": "!isIOS"
+    },
+    {
+        "key": "ctrl+space [",
+        "command": "workbench.action.closeAllEditors"
+    },
+    {
+        "key": "ctrl+k ctrl+w",
+        "command": "-workbench.action.closeAllEditors"
     }
 ]

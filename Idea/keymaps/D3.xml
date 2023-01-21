@@ -15,7 +15,7 @@
     <keyboard-shortcut first-keystroke="alt t" />
   </action>
   <action id="ActivateTerminalToolWindow">
-    <keyboard-shortcut first-keystroke="shift t" />
+    <keyboard-shortcut first-keystroke="shift alt t" />
   </action>
   <action id="ActivateVersionControlToolWindow" />
   <action id="Android.Designer.AutoArrange" />
@@ -54,6 +54,7 @@
   <action id="FindNext">
     <keyboard-shortcut first-keystroke="f3" />
   </action>
+  <action id="Git.Commit.And.Push.Executor" />
   <action id="Git.Commit.Stage" />
   <action id="GotoDeclaration">
     <mouse-shortcut keystroke="control button1" />
@@ -66,10 +67,14 @@
     <keyboard-shortcut first-keystroke="alt g" />
   </action>
   <action id="GotoTest" />
+  <action id="Hg.Commit.And.Push.Executor" />
   <action id="Hotswap">
     <keyboard-shortcut first-keystroke="shift alt h" />
   </action>
   <action id="InsertLiveTemplate" />
+  <action id="Maven.Reimport">
+    <keyboard-shortcut first-keystroke="alt m" />
+  </action>
   <action id="NewClass">
     <keyboard-shortcut first-keystroke="alt f" />
   </action>
@@ -92,6 +97,9 @@
   </action>
   <action id="SelectNextOccurrence" />
   <action id="Terminal.ClearBuffer" />
+  <action id="ToggleFullScreen">
+    <keyboard-shortcut first-keystroke="alt e" />
+  </action>
   <action id="ToggleLineBreakpoint">
     <keyboard-shortcut first-keystroke="ctrl f8" />
     <keyboard-shortcut first-keystroke="alt b" />
@@ -102,9 +110,13 @@
   <action id="TypeHierarchy" />
   <action id="TypeHierarchyBase.BaseOnThisType" />
   <action id="Vcs.Log.FocusTextFilter" />
+  <action id="Vcs.ToggleAmendCommitMode" />
   <action id="Vcs.UpdateProject" />
   <action id="XDebugger.MuteBreakpoints">
     <keyboard-shortcut first-keystroke="ctrl alt b" />
+  </action>
+  <action id="performancePlugin.ShowMemoryDialogAction">
+    <keyboard-shortcut first-keystroke="ctrl alt k" />
   </action>
   <action id="tasks.switch" />
 </keymap>
